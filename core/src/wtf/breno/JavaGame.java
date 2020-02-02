@@ -15,12 +15,12 @@ public class JavaGame extends ApplicationAdapter {
 	private static JavaGame gameInstance;
 	public static final boolean DEBUG = true;
 
-	SpriteBatch batch;
+    private SpriteBatch batch;
 
-	protected OrthographicCamera camera;
-	protected Viewport viewport;
+    private OrthographicCamera camera;
+    private Viewport viewport;
 
-	protected World world;
+    private World world;
 
 	public JavaGame() {
 		gameInstance = this;
@@ -53,7 +53,7 @@ public class JavaGame extends ApplicationAdapter {
 
 	@Override
 	public void render () {
-		Gdx.gl.glClearColor(1, 0, 0, 1);
+        Gdx.gl.glClearColor(0, 153, 255, 0.2f);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
 		batch.begin();
