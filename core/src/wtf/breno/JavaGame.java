@@ -57,7 +57,7 @@ public class JavaGame extends ApplicationAdapter {
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
 		batch.begin();
-		world.render(batch);
+        world.render(batch); //rendering world
 		batch.end();
 	}
 	
